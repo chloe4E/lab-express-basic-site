@@ -4,54 +4,107 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>Works</title>
   </head>
-  <body>
-    <nav id="navbar">
-      <ul>
-        <li><a href="/home">home</a></li>
-        <li><a href="/about">about</a></li>
-        <li><a href="/works">activities</a></li>
-        <li><a href="/contact">contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="container">
-      <figure>
-        Reading a tale
-        <br />
-        <img src="/images/read.jpeg" alt="" />
-      </figure>
-      <figure>
-        Cooking
-        <br />
-        <img src="/images/cooking.jpeg" alt="" />
-      </figure>
-      <figure>
-        Drawing
-        <br />
-        <img src="/images/draw.jpeg" alt="" />
-      </figure>
-      <figure>
-        Gymnastic
-        <br />
-        <img src="/images/kidgym.jpeg" alt="" />
-      </figure>
-      <figure>
-        Music workshop
-        <br />
-        <img src="/images/batondepluie.jpeg" alt="" />
-      </figure>
-      <figure>
-        Crafting toys
-        <br />
-        <img src="/images/crafting-toys.jpeg" alt="" />
-      </figure>
-      <figure></figure>
-      <figure></figure>
-      <figure></figure>
-      <figure></figure>
+  <body class="bg-secondary" style="--bs-bg-opacity: 0.5">
+          <!-- As a link -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Rainy Day</a>
+  </div>
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="/home">home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">about</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/works">activities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">contact</a>
+        </li>
+</nav>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="/images/read.jpeg" class="card-img-top" alt="reading" />
+          <div class="card-body">
+            <h5 class="card-title">Reading</h5>
+            <p class="card-text">
+              Reading a tale or a short book in a clam atmosphere can be
+              soothing for both parents and children
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/images/cooking.jpeg" class="card-img-top" alt="cooking" />
+          <div class="card-body">
+            <h5 class="card-title">Cooking</h5>
+            <p class="card-text">
+              Simple sponge cake or crêpes are a go-to option for
+              cooking-lovers.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/images/draw.jpeg" class="card-img-top" alt="draw" />
+          <div class="card-body">
+            <h5 class="card-title">Drawing or painting</h5>
+            <p class="card-text">Unleash creativity with thema etc.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="/images/batondepluie.jpeg"
+            class="card-img-top"
+            alt="music"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Music</h5>
+            <p class="card-text">
+              With no equipement you can entertain the family
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/images/kidgym.jpeg" class="card-img-top" alt="gym" />
+          <div class="card-body">
+            <h5 class="card-title">Music</h5>
+            <p class="card-text">Move you bodies</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="/images/crafting-toys.jpeg"
+            class="card-img-top"
+            alt="crafiting toys"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Music</h5>
+            <p class="card-text">Crafting toys with online instructions.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
